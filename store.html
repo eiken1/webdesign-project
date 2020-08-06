@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> 
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nettbutikk</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/store.css">
+
+    <!--For sosial media ikoner-->
+    <script src="https://kit.fontawesome.com/8fccf09a04.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="main">
+
+        <div id="home-header" class="header">
+            <img src="images/jesp_title.png" alt="Jespen Popstjerne" id="jesp-title">
+            <div id="shopping-div">
+                <a href="store.html" class="fas fa-shopping-cart"></a>
+            </div>
+        </div>
+
+        <div id="nav" class="navbar">
+            <ul id="navList">
+                <li><a href="home.html" class="link">Hjem</a></li>
+                <li><a href="concert.html" class="link">Konserter</a></li>
+                <li><a href="about.html" class="link">Om meg</a></li>
+                <li><a href="contact.html" class="link">Kontakt</a></li>
+                <li><a href="store.html" class="active">Nettbutikk</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a></li>
+            </ul>
+        </div>
+
+        <div id="content" class="content">
+
+            <div id="store-main">
+
+                <div id="category-div">
+                    <h1 id="cat-title">KATEGORIER</h1>
+
+                    <ul id="category-list">
+                        <li id="clothes-nav" class="active">KLÆR</li>
+                        <li id="music-nav">MUSIKK</li>
+                        <li id="accesory-nav">TILBEHØR</li>
+
+                    </ul>
+
+                </div>
+
+                <div id="shopping-items">
+
+                    <div id="clothes-div">
+                        <div class="cloth-div">
+                            <img src="images/jespen_tskjorte.png" alt="Jespen tskjorte">
+                            <h3>SPRÆNGKUL TSKJORTE</h3>
+                            <span>249 KR</span>
+                        </div>
+
+                        <div class="cloth-div">
+                            <img src="images/jespen_hoodie.png" alt="Jespen hoodie">
+                            <h3>SPRÆNGKUL HOODIE</h3>
+                            <span>499 KR</span>
+                        </div>
+
+                        <div class="cloth-div">
+                            <img src="images/jespen_hoodie.png" alt="Jespen genser">
+                            <h3>SPRÆNGKUL GENSER</h3>
+                            <span>399 KR</span>
+                        </div>
+
+                        <div class="cloth-div">
+                            <img src="images/jespen_tskjorte.png" alt="Jespen joggebukse">
+                            <h3>SPRÆNGKUL JOGGEBUKSE</h3>
+                            <span>499 KR</span>
+                        </div>
+
+                        <div class="cloth-div">
+                            <img src="images/jespen_hoodie.png" alt="Jespen tskjorte">
+                            <h3>JESPENPOPSTJERNE TSKJORTE</h3>
+                            <span>299 KR</span>
+                        </div>
+                    </div>
+
+                    <div id="music-div">
+                        <div class="music-div">
+                            <img src="images/jespen_plate.png" alt="Jespen plate">
+                            <h3>SPRÆNGKUL VINYL</h3>
+                            <span>249 KR</span>
+                        </div>
+
+                        <div class="music-div">
+                            <img src="images/jespen_plate.png" alt="Jespen plate">
+                            <h3>SPRÆNGKUL CD</h3>
+                            <span>149 KR</span>
+                        </div>
+
+                        <div class="music-div">
+                            <img src="images/jespen_plate.png" alt="Jespen plate">
+                            <h3>JESPEN POPSTJERNE VINYL</h3>
+                            <span>199 KR</span>
+                        </div>
+
+                        <div class="music-div">
+                            <img src="images/jespen_plate.png" alt="Jespen plate">
+                            <h3>JESPEN POPSTJERNE CD</h3>
+                            <span>99 KR</span>
+                        </div>
+                    </div>
+
+                    <div id="accessories-div">
+                        <div class="accessory-div">
+                            <img src="images/jespen_bag.png" alt="Jespen bag">
+                            <h3>SPRÆNGKUL BØTTEHATT</h3>
+                            <span>199 KR</span>
+                        </div>
+
+                        <div class="accessory-div">
+                            <img src="images/jespen_bag.png" alt="Jespen bag">
+                            <h3>SPRÆNGKUL RUMPETASKE</h3>
+                            <span>249 KR</span>
+                        </div>
+
+                        <div class="accessory-div">
+                            <img src="images/jespen_bag.png" alt="Jespen bag">
+                            <h3>SPRÆNGKUL HANDLENETT</h3>
+                            <span>199 KR</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="cart-div">
+                    <div id="cart-img">
+                        <img src="images/jespen_bag.png" alt="Jespen bag handlekurv">
+                    </div>
+
+                    <div id="cart-info">
+                        <h1>SPRÆNGKUL HANDLENETT</h1>
+                        <hr>
+                        <div id="product-info">
+                            <p>FARGE: HVIT</p>
+                            <p>MATERIALE: 100% BOMULL</p>
+                        </div>
+                        <div id="product-details">
+                            <span>199 KR</span>
+                            <select name="size" id="size-input" placeholder="STØRRELSE">
+                                <option value="XS">EKSTRA LITEN</option>
+                                <option value="S">LITEN</option>
+                                <option value="M">MEDIUM</option>
+                                <option value="L">STOR</option>
+                                <option value="XL">EKSTRA STOR</option>
+                            </select>
+                            <button id="cart-button"><i class="fas fa-shopping-cart"></i>LEGG TIL I HANDLEKURV</button>
+                        </div>
+                    </div>
+
+                    <div id="cart-popup">
+                        <div id="header-popup">
+                            <span>DU HAR <i>1 VARE </i> I HANDLEKURVEN</span>
+                            <i id="close-x">X</i>
+                        </div>
+                        <div id="product-popup">
+                            <img src="images/jespen_bag.png" alt="Jespen bag handlekurv">
+
+                            <div>
+                                <div>
+                                    <span>SPRÆNGKUL HANDLENETT</span>
+                                    <span>SVART</span>
+                                </div>
+                                <h3>199 KR</h3>
+                            </div>
+
+                            <i>x</i>
+                        </div>
+                        <div id=product-pricing>
+                            <div id="part-price">
+                                <span>DELSUM:</span>
+                                <span>KR 199</span>
+                            </div>
+                            <hr>
+                            <div id="total-price">
+                                <span>TOTALSUM:</span>
+                                <span>199 KR</span>
+                            </div>
+                        </div>
+                        <div id="product-buttons">
+                            <button id="resume-button" class="popup-button">FORTSETT Å HANDLE</button>
+                            <button id="continue-button" class="popup-button">GÅ TIL KASSEN</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="checkout-main">
+
+                <div id="order-div" class="checkout-element">
+                    <div id="order-price">
+                        <span>DIN ORDRE</span>
+                        <span>199 KR</span>
+                    </div>
+                    <div id="order-details">
+                        <img src="images/jespen_bag.png" alt="Jespen bag handlekurv">
+                        <div>
+                            <span>SPRÆNGKUL HANDLENETT</span>
+                            <p>SVART</p>
+                        </div>
+                        <h3>199 KR</h3>
+                    </div>
+                    <div id="order-total">
+                        <span>TOTALSUM:</span>
+                        <span>199 KR</span>
+                    </div>
+                </div>
+
+                <div id="delivery-div" class="checkout-element">
+                    <div id="delivery-options">
+                        <h1>FRAKT</h1>
+                        <div class="option-active">
+                            <h2>STANDARD</h2>
+                            <span>Leveringstid: 2-4 virkedager</span>
+                        </div>
+                    </div>
+
+                    <div id="delivery-payment">
+                        <h1>BETALING</h1>
+                        <div class="option-active">
+                            <h2>VIPPS</h2>
+                            <span>Ingen ekstra kostnader</span>
+                        </div>
+                        <div class="option">
+                            <h2>KORT</h2>
+                            <span>Ingen avgift</span>
+                        </div>
+                        <div class="option">
+                            <h2>FAKTURA</h2>
+                            <span>29 kr - 14 dager</span>
+                        </div>
+                    </div>
+                </div>
+
+                <span id="mandatory">*Påkrevd</span>
+                <div id="delivery-details" class="checkout-element">
+                    <h1>LEVERINGSDETALJER</h1>
+                    <div id="details-inputs">
+                        <div class="detail-div">
+                            <label class="detail-label" for="email">EPOST*</label>
+                            <input type="text" id="email" class="detail-input" placeholder="Epost">
+                        </div>
+                        <div class="detail-div">
+                            <label class="detail-label" for="mobile">MOBIL*</label>
+                            <input type="text" id="mobile" class="detail-input" placeholder="Mobil">
+                        </div>
+                        <div class="detail-div">
+                            <label class="detail-label" for="first-name">FORNAVN*</label>
+                            <input type="text" id="first-name" class="detail-input" placeholder="Fornavn">
+                        </div>
+                        <div class="detail-div">
+                            <label class="detail-label" for="adress">ADDRESSE*</label>
+                            <input type="text" id="adress" class="detail-input" placeholder="Addresse">
+                        </div>
+                        <div class="detail-div">
+                            <label class="detail-label" for="last-name">ETTERNAVN*</label>
+                            <input type="text" id="last-name" class="detail-input" placeholder="Etternavn">
+                        </div>
+                        <div class="detail-div">
+                            <label class="detail-label" for="post-nr">POSTNUMMER*</label>
+                            <input type="text" id="post-nr" class="detail-input" placeholder="Postnummer">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="confirm-button-div">
+                    <button id="confirm-button">BEKREFT BESTILLING <i>></i></button>
+                </div>
+            </div>
+            <div id="confirmation-div">
+                <div id="confirmation-container">
+                    <h1>TAKK FOR DIN BESTILLING</h1>
+                    <span>Leveringsbekreftelse er sendt til din epost</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="home-footer" class="footer">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-spotify"></a>
+        </div>
+
+    </div>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <script src="js/store.js"></script>
+</body>
+
+</html>

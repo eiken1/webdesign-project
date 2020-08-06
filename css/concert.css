@@ -1,0 +1,127 @@
+#concert-main { 
+    background-color: #F0E8FF;
+    grid-area: content;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 30% 70%;
+    grid-template-areas:
+        ". title ."
+        "content content content";
+}
+
+.title-div {
+    grid-area: title;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#concert-title {
+    font-size: 4em;
+    color: #ffffff;
+}
+
+#concert-table {
+    grid-area: content;
+    height: 100%;
+    width: 100%;
+}
+
+#concert-body {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-areas:
+        "table1"
+        "table2"
+        "table3"
+        "table4"
+        "table5";
+}
+
+#table1, #table2, #table3, #table4, #table5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#table1 {
+    grid-area: table1;
+}
+
+#table2 {
+    grid-area: table2;
+}
+
+#table3 {
+    grid-area: table3;
+}
+
+#table4 {
+    grid-area: table4;
+}
+
+#table5 {
+    grid-area: table5;
+}
+
+.table-date {
+    margin-left: 10vw;
+}
+
+.table-city {
+    margin-right: 10vw;
+}
+
+.table-date, .table-location, .table-city {
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 600px) {
+    #concert-main {
+        grid-template-rows: 20% 80%;
+        grid-template-areas:
+        "title title title"
+        "content content content";
+    }
+
+    #concert-title {
+        font-size: 3em;
+    }
+
+    .table-date, .table-location, .table-city {
+        font-size: 1.1em;
+        font-weight: bolder;
+        margin: 0;
+        margin-right: 1%;
+    }
+
+    .table-location {
+        font-size: 0.9em;
+    }
+
+    #table1, #table2, #table3, #table4, #table5 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid black;
+    }
+
+    #concert-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .table-city {
+        display: none;
+    }
+
+}

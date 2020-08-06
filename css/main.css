@@ -1,0 +1,172 @@
+@font-face{
+    font-family: montserrat;
+    src: url("../fonts/montserrat/Montserrat-Regular.otf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+}
+ 
+#main {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 5% 75% 10%;
+    grid-template-areas:
+        "header"
+        "nav"
+        "content"
+        "footer";
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header img {
+    width: 19%;
+}
+
+.header div {
+    margin: 1vh 4%;
+}
+
+.header div a {
+    text-decoration: none;
+    color: black;
+    padding: 0.2em;
+    border-radius: 5px;
+    background-color: #CA92FF;
+    font-size: 2.5em;
+}
+
+.navbar {
+    grid-area: nav;
+    background-color: #992EFF;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+.navbar ul {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul li{
+    margin: 0 1em;
+    font-size: 1.5em;
+}
+
+.link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.link:hover, .active {
+    text-decoration: underline;
+    color: #86D5B0;
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #CA92FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a {
+    margin: 0 1em;
+    color: #ffffff;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    .footer a {
+        font-size: 1.4em;
+    }
+
+    .header img {
+        width: 60%;
+    }
+
+    #navList li {
+        font-size: 0.8em;
+        margin: 0;
+    }
+
+    #navList {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header div {
+        margin: 0;
+    }
+
+     /*
+    .link {
+        display: none;
+    }
+
+    .header img {
+        width: 60%;
+    }
+
+    #navList li:last-child {
+        display: block;
+        color: black;
+        height: 100%;
+        width: 100%;
+    }
+
+    .navbar .icon {
+        display: block;
+        color: #ffffff;
+    }
+
+    .footer a {
+        font-size: 1.4em;
+    }
+
+    .navList.responsive {
+        height: 100%;
+        position: relative;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+    .navList.responsive a {
+        display: block;
+        text-align: left;
+        color: black;
+    }
+
+    .navList .active {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+    }
+    */
+
+}
